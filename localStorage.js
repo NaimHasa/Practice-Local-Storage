@@ -28,3 +28,23 @@ document.getElementById('email-send-btn').addEventListener('click', function () 
 document.getElementById('email-btn-delete').addEventListener('click', function () {
     localStorage.removeItem('Email');
 })
+
+
+//------------------------ comment section works  ----------------------------------
+
+
+
+
+document.getElementById('commmet-send-btn').addEventListener('click', function () {
+    const commentFiled = document.getElementById('comment-text-filed');
+    const commentFiledText = commentFiled.value;
+    localStorage.setItem('comment', commentFiledText)
+
+    commentFiled.value = '';
+
+
+})
+
+document.getElementById('comment-delete-btn').addEventListener('click', function () {
+    localStorage.removeItem('comment');
+})
