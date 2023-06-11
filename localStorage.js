@@ -48,3 +48,8 @@ document.getElementById('commmet-send-btn').addEventListener('click', function (
 document.getElementById('comment-delete-btn').addEventListener('click', function () {
     localStorage.removeItem('comment');
 })
+
+
+document.getElementById('all-reset').addEventListener('click', function () {
+    localStorage.clear();
+})
